@@ -13,7 +13,7 @@ import {
   KeyboardAvoidingView,
 } from 'react-native';
 
-import { COLLECTION_APPOINTMENTS } from '../../configs/';
+import { COLLECTION_APPOINTMENTS } from '../../configs/database';
 import { theme } from '../../global/styles/theme';
 import { styles } from './styles';
 
@@ -98,7 +98,7 @@ export function AppointmentCreate(){
           </Text>
 
           <CategorySelect 
-            hasCheckBox
+            hasCheckbox
             setCategory={handleCategorySelect}
             categorySelected={category}
           />
